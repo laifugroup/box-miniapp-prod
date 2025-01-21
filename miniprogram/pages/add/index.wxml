@@ -1,0 +1,32 @@
+<view class="container">
+  <form bindsubmit="submitForm">
+    <view class="form-item">
+      <text class="label">物品名称</text>
+      <input class="input" placeholder="请输入物品名称" bindinput="onNameInput"/>
+    </view>
+
+    <view class="form-item">
+      <text class="label">存放位置</text>
+      <input class="input" placeholder="请输入存放位置" bindinput="onLocationInput"/>
+    </view>
+
+    <view class="form-item">
+      <text class="label">分类</text>
+      <picker mode="selector" range="{{categories}}" bindchange="onCategoryChange">
+        <view class="picker">
+          {{category || '请选择分类'}}
+        </view>
+      </picker>
+    </view>
+
+    <view class="form-item">
+      <text class="label">图片</text>
+      <view class="image-upload" bindtap="chooseImage">
+        <image wx:if="{{image}}" src="{{image}}" mode="aspectFill"/>
+        <text wx:else>点击上传图片</text>
+      </view>
+    </view>
+
+    <button class="submit-btn" form-type="submit">保存</button>
+  </form>
+</view> 

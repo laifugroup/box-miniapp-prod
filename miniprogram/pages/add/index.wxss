@@ -1,0 +1,50 @@
+.container {
+  padding: 30rpx;
+}
+
+.form-item {
+  margin-bottom: 30rpx;
+}
+
+.label {
+  display: block;
+  font-size: 28rpx;
+  margin-bottom: 10rpx;
+}
+
+.input {
+  width: 100%;
+  height: 80rpx;
+  border: 1rpx solid #ddd;
+  border-radius: 8rpx;
+  padding: 0 20rpx;
+}
+
+.picker {
+  width: 100%;
+  height: 80rpx;
+  border: 1rpx solid #ddd;
+  border-radius: 8rpx;
+  padding: 0 20rpx;
+  line-height: 80rpx;
+}
+
+.image-upload {
+  width: 200rpx;
+  height: 200rpx;
+  border: 1rpx dashed #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-upload image {
+  width: 100%;
+  height: 100%;
+}
+
+.submit-btn {
+  background: #07c160;
+  color: white;
+  margin-top: 50rpx;
+} 
