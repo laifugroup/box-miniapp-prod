@@ -31,7 +31,7 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "收纳",
+        "text": "区域",
         "iconPath": "assets/images/tab/square.png",
         "selectedIconPath": "assets/images/tab/square-active.png"
       },

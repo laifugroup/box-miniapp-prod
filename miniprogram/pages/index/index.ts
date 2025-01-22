@@ -23,18 +23,14 @@ Component({
         url: '../logs/logs',
       })
     },
-
-
-  
     onSearch(e: any) {
       const keyword = e.detail.value;
       // TODO: 实现搜索逻辑
     },
     async onPullDownRefresh() {
-      console.log("--onRefresh")
+      console.log("--onPullDownRefresh")
       this.setData({ isRefreshing: true });
       try {
-        // TODO: 刷新数据
         await this.loadAreas(1);
         this.setData({ page: 1 });
       } finally {
@@ -46,7 +42,6 @@ Component({
 
 
     async onReachBottom() {
-
       console.log("--onReachBottom")
       try {
         await this.loadAreas(this.data.page + 1);
@@ -66,7 +61,7 @@ Component({
         for (let i = 1; i <= 20; i++) {
           mockAreas.push({
           id:( page * 20 + i ).toString(),
-          name: i % 2 === 0 ? '书房'+( page * 20 + i ).toString() : '客厅' +( page * 20 + i ).toString(),
+          name: i % 2 === 0 ? '书房大书房大书房12大书房'+( page * 20 + i ).toString() : '客厅' +( page * 20 + i ).toString(),
           icon: '/assets/images/tab/' + (i % 2 === 0 ? 'checkin.png' : 'plus.png'),
           itemCount: 8,
           isEncrypted: i % 2 === 0
