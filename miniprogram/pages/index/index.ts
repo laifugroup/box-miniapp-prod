@@ -46,11 +46,6 @@ Component({
 
 
     async onReachBottom() {
-            // 延迟1秒后执行代码
-      setTimeout(function() {
-        console.log("延时1秒后执行");
-        // 在这里执行你需要的操作
-      }, 1000);
 
       console.log("--onReachBottom")
       try {
