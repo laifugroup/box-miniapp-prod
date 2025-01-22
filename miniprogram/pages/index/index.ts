@@ -52,10 +52,6 @@ Component({
       }
     },
     async loadAreas(page: number) {
-
-       
-
-
       console.log("page ---> "+page)
       const mockAreas: AreaItem[] = [];
         for (let i = 1; i <= 20; i++) {
@@ -63,17 +59,15 @@ Component({
           id:( page * 20 + i ).toString(),
           name: i % 2 === 0 ? '书房大书房大书房12大书房'+( page * 20 + i ).toString() : '客厅' +( page * 20 + i ).toString(),
           icon: '/assets/images/tab/' + (i % 2 === 0 ? 'checkin.png' : 'plus.png'),
-          itemCount: 8,
-          isEncrypted: i % 2 === 0
+          itemCount: Math.floor(Math.random() * 1000) + 1,
+          isEncrypted: i % 3 === 0
           });
         }
-
       if (page === 1) {
         this.setData({ areas: mockAreas });
       } else {
         this.setData({ areas: [...this.data.areas, ...mockAreas] });
       }
-      // 模拟是否还有更多数据
     },
     onAreaTap(e: any) {
       const areaId = e.currentTarget.dataset.id;
