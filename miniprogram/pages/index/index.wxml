@@ -20,9 +20,9 @@
           <image class="area-icon" src="{{item.icon}}" mode="aspectFit"/>
           <view class="area-info">
             <view class="area-header">
-              <text wx:if="{{item.isEncrypted}}" class="lock-emoji">🔒</text>
               <text class="area-name">{{item.name}}</text>
             </view>
+            <text wx:if="{{item.isEncrypted}}" class="lock-emoji">🔒</text>
             <text class="item-count">{{item.itemCount}}件物品</text>
           </view>
         </view>

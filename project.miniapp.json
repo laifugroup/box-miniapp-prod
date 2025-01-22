@@ -13,7 +13,8 @@
       "bluetooth": false,
       "network": false,
       "scanner": false,
-      "xweb": false
+      "xweb": false,
+      "skyline": false
     },
     "icons": {
       "hdpi": "",

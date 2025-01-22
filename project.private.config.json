@@ -2,6 +2,7 @@
   "description": "Box收纳盒子",
   "projectname": "box-miniapp-prod",
   "setting": {
-    "compileHotReLoad": true
+    "compileHotReLoad": true,
+    "skylineRenderEnable": true
   }
 }

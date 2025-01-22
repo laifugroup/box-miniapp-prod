@@ -72,7 +72,12 @@
           font-weight: 500;
           color: #333;
           margin-right: 8rpx;
-      
+          text-overflow: -o-ellipsis-lastline;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 1;
+          -webkit-box-orient: vertical;
         }
 
         .lock-emoji {
