@@ -3,11 +3,20 @@
     "pages/index/index",
     "pages/add/index"
   ],
+  "style": "v2",
+  "renderer": "skyline",
+  "rendererOptions": {
+    "skyline": {
+      "tagNameStyleIsolation": true,
+      "defaultDisplayBlock": true
+    }
+  },
+  "lazyCodeLoading": "requiredComponents",
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "收纳助手",
     "navigationBarTextStyle": "black",
-    "navigationStyle": "default"
+    "navigationStyle": "default",
   }
 } 
