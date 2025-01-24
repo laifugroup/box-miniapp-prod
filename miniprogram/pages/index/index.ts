@@ -74,6 +74,7 @@ Component({
       // TODO: 跳转到区域详情页
     },
     navigateToAdd() {
+      console.log("V11111")
       wx.navigateTo({
         url: '/pages/add/index'
       });

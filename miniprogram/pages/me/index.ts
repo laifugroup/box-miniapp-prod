@@ -7,8 +7,8 @@ Page({
         isVip:true,
         vipExpireDate:'2025-01-08',
         menuItems: [
-            { id: 'goals', icon: '🎯', title: '区域列表', badge: 0 },
-            { id: 'records', icon: '📝', title: '所有记录' },
+            { id: 'goals', icon: '🎯', title: '所有区域', badge: 0 },
+            { id: 'records', icon: '📝', title: '所有物品' },
             { id: 'achievements', icon: '🏆', title: '我的成就', badge: 1 },
             { id: 'favorites', icon: '⭐', title: '我的证书' },
             { id: 'settings', icon: '⚙️', title: '更多设置' }
