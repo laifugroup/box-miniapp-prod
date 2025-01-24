@@ -3,7 +3,8 @@
   "projectname": "box-miniapp-prod",
   "setting": {
     "compileHotReLoad": true,
-    "skylineRenderEnable": true
+    "skylineRenderEnable": true,
+    "urlCheck": false
   },
   "libVersion": "3.7.6"
 }
