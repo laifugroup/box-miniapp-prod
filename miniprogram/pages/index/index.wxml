@@ -10,7 +10,9 @@
   <scroll-view 
     class="area-list" 
     scroll-y 
-    refresher-enabled
+    refresher-enabled="{{true}}"
+    refresher-background="red"
+    refresher-triggered="{{isRefresher}}"
     bindrefresherrefresh="onPullDownRefresh"
     bindscrolltolower="onReachBottom">
     

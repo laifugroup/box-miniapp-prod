@@ -34,6 +34,7 @@ Component({
         await this.loadAreas(1);
         this.setData({ page: 1 });
       } finally {
+        console.log("--stopPullDownRefresh1")
         this.setData({ isRefreshing: false });
         wx.stopPullDownRefresh()
       }
@@ -44,6 +45,8 @@ Component({
     async onReachBottom() {
       console.log("--onReachBottom")
       try {
+        // Add 600ms delay
+        await new Promise(resolve => setTimeout(resolve, 600));
         await this.loadAreas(this.data.page + 1);
         this.setData({ page: this.data.page + 1 });
       } finally {
@@ -52,6 +55,7 @@ Component({
       }
     },
     async loadAreas(page: number) {
+      //
       console.log("page ---> "+page)
       const mockAreas: AreaItem[] = [];
         for (let i = 1; i <= 20; i++) {
