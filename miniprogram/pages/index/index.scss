@@ -3,8 +3,10 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  
+
 }
+
+
 
 .search-box {
   padding: 24rpx 30rpx;
@@ -34,6 +36,8 @@
   background: #f5f5f5;
 }
 
+
+
 .areas-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -47,7 +51,7 @@
   background: #fff;
   border-radius: 16rpx;
   padding: 24rpx;
-  box-shadow: 0 2rpx 8rpx rgba(0,0,0,0.04);
+  box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.04);
 
   .area-content {
     display: flex;
@@ -113,7 +117,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4rpx 16rpx rgba(7,193,96,0.3);
+  box-shadow: 0 4rpx 16rpx rgba(7, 193, 96, 0.3);
 
   .add-text {
     color: white;
@@ -140,7 +144,7 @@
 
 /* Add right margin to the list items */
 .page {
-    // .list-item {
-    //     margin-right: 10px;
-    // }
+  // .list-item {
+  //     margin-right: 10px;
+  // }
 }

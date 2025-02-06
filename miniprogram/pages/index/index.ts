@@ -15,6 +15,7 @@ Component({
   data: {
     areas: [] as AreaItem[],
     page: 1,
+    isRefreshing: false
   },
   methods: {
     // 事件处理函数
@@ -50,18 +51,20 @@ Component({
         await this.loadAreas(this.data.page + 1);
         this.setData({ page: this.data.page + 1 });
       } finally {
-        wx.stopPullDownRefresh()
         console.log("--stopPullDownRefresh")
+        this.setData({ isRefreshing: false });
+        wx.stopPullDownRefresh()
       }
     },
     async loadAreas(page: number) {
-      //
       console.log("page ---> "+page)
       const mockAreas: AreaItem[] = [];
         for (let i = 1; i <= 20; i++) {
+          var id = ( page * 20 + i ).toString()
+          console.log("id ---> "+id)
           mockAreas.push({
-          id:( page * 20 + i ).toString(),
-          name: i % 2 === 0 ? '书房大书房大书房12大书房'+( page * 20 + i ).toString() : '客厅' +( page * 20 + i ).toString(),
+          id:id,
+          name: i % 2 === 0 ? '书房大书'+( page * 20 + i ).toString() : '客厅' +( page * 20 + i ).toString(),
           icon: '/assets/images/tab/' + (i % 2 === 0 ? 'checkin.png' : 'plus.png'),
           itemCount: Math.floor(Math.random() * 1000) + 1,
           isEncrypted: i % 3 === 0

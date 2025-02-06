@@ -10,10 +10,8 @@
   <scroll-view 
     class="area-list" 
     scroll-y 
-    refresher-enabled="{{true}}"
-    refresher-background="red"
-    refresher-triggered="{{isRefresher}}"
-    bindrefresherrefresh="onPullDownRefresh"
+    refresher-enabled="{{false}}"
+    refresher-triggered="{{isRefreshing}}"
     bindscrolltolower="onReachBottom">
     
     <view class="areas-grid">
@@ -29,11 +27,6 @@
           </view>
         </view>
       </view>
-    </view>
-
-    <!-- 加载更多提示 -->
-    <view class="loading-more" wx:if="{{isLoadingMore}}">
-      <text>加载中...</text>
     </view>
   </scroll-view>
 
