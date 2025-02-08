@@ -47,7 +47,7 @@ Component({
       console.log("--onReachBottom")
       try {
         // Add 600ms delay
-        await new Promise(resolve => setTimeout(resolve, 600));
+       // await new Promise(resolve => setTimeout(resolve, 600));
         await this.loadAreas(this.data.page + 1);
         this.setData({ page: this.data.page + 1 });
       } finally {

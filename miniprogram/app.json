@@ -1,6 +1,6 @@
 {
   "pages": [
-    "pages/index/index",
+    "pages/area/index",
     "pages/me/index",
      "pages/add/index"
   ],
@@ -17,7 +17,7 @@
     "backgroundColor": "#ffffff",
     "list": [
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/area/index",
         "text": "区域",
         "iconPath": "assets/images/tab/square.png",
         "selectedIconPath": "assets/images/tab/square-active.png"
